@@ -1,0 +1,105 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nextPage, .previousPage {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.nextPage {
+    bottom: 10px;
+    right: 10px;
+}
+
+.previousPage {
+    top: 10px;
+    left: 10px;
+}
+
+.circulo {
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+}
+
+/* Seção Regras */
+.regras {
+    display: flex;
+    background-color: #D0D0D0;
+    height: 100vh;
+}
+
+.regras .contentBox {
+    width: 100%;
+    padding: 50px;
+    background-color: #C0C0C0;
+}
+
+.regras .imgBox {
+    width: 100%;
+    background: url(../images/Mole.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para dispositivos de largura mínima de 320px */
+@media (max-width: 320px) {
+    /* Tamanhos de fontes e padding ajustados */
+    .heading {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    /* Botões de navegação */
+    .nextPage, .previousPage {
+        bottom: 5px;
+        right: 5px;
+        top: 5px;
+        left: 5px;
+    }
+
+    .circulo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Seção Regras */
+    .regras {
+        flex-direction: column;
+        padding: 10px;
+        height: auto; /* Permite que a altura da seção ajuste-se ao conteúdo */
+    }
+
+    .regras .contentBox {
+        padding: 20px;
+    }
+
+    .regras .imgBox {
+        height: 200px; /* Limita a altura da imagem para telas menores */
+    }
+}
