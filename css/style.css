@@ -271,22 +271,4 @@ td:nth-child(3) {
 
 }
 
-@media (max-width: 320px) {
-    .tabuleiro{
-        width: 100%;
-        
-    }
-    *{
-        margin: 0;
-        padding: 0;
-    }
 
-
-    .gramado{
-        width: 100%;
-        margin-top: 100px;
-    }
-
-    
-    
-}
